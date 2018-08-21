@@ -1,268 +1,11 @@
+<!-- All images should have a 16:9 aspect ratio -->
+
 <!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title>Troy High School Virtual Campus Tour</title>
-    <style type="text/css">
-		html, body {
-			height: 100%;
-			width: 100%;
-			margin: 0;
-		}
-		div {
-			margin: 0;
-		}
-		h1 {
-			color: white;
-		}
-		p {
-			color: white;
-			margin: 0px;
-		}
-		@media (min-width: 320px) and (max-width: 480px) {
-			#header {
-				width: 100%;
-				height: 5.55556%;
-				background-color: rgb(138, 8, 8);
-			}
-			#wrapper {
-				width: 100%;
-			}
-		}
-		.bt {
-			-webkit-user-select: none;  /* Chrome all / Safari all */
-  			-moz-user-select: none;     /* Firefox all */
-  			-ms-user-select: none;      /* IE 10+ */
-			position: relative;
-			cursor: pointer;
-			font-weight: bold;
-			font-size: 24px;
-			color: white;
-		}
-		/* Everything on top */
-		.popup {
-			display: none;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			pointer-events: none;
-			z-index: 4;
-		}
-		.classrooms {
-			display: none;
-			position: relative;
-			width: 80%;
-			max-width: 1280px;
-			margin: auto;
-			margin-top: 4%;
-		}
-		.expandedMaps {
-			display: none;
-			position: relative;
-			width: 80%;
-			max-width: 1320px;
-			margin: auto;
-			margin-top: 4%;
-		}
-		.expandedSites {
-			display: none;
-			position: relative;
-			width: 80%;
-			max-width: 1280px;
-			margin: auto;
-			margin-top: 4%;
-		}
-		.cblurbs_container {
-			display: none;
-			width: 80%;
-			max-width: 1280px;
-			background-color: rgb(29, 29, 29);
-			margin: auto;
-		}
-		.classroom_blurbs {
-			width: 97%;
-			max-width: 1220px;
-			margin: auto;
-			padding: 10px;
-		}
-		/* Lightbox */
-		#lightbox {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.8);
-			z-index: 3;
-		}
-		#close {
-			float: right;
-			top: 50px;
-			right: 50px;
-			z-index: 4;
-		}
-		/* Header */
-		#header {
-			position: absolute;
-			width: 100%;
-			height: 60px;
-			background-color: rgb(138, 8, 8);
-			float: left;
-		}
-		#header p {
-			position: relative;
-			font-size: 30px;
-			top: 10px;
-			left: 20px;
-		}
-		/* Everything else */
-		#wrapper {
-			width: 1280px;
-			height: 800px;
-			margin: auto;
-		}
-		/*Blurb box*/
-		.site_titles {
-			width: 100%;
-			text-align: center;
-			display: none;
-		}
-		.blurbs {
-			position: relative;
-			width: 165px;
-			left: 20px;
-			display: none;
-		}
-		.info_container {
-			width: 175px;
-			height: 50px;
-			margin-left: 15px;
-			margin-bottom: 10px;
-			margin-top: 10px;
-			text-align: center;
-			background-color: rgb(138, 8, 8);
-			display: none;
-		}
-		.info {
-			font-weight: normal;
-			font-size: 12px;
-			line-height: 50px;
-		}
-		#blurb_container {
-			width: 205px;
-			height: 505px;
-			float: left;
-			position: relative;
-			background-color: rgb(29, 29, 29);
-			margin-top: 80px;
-			margin-left: 105px; 
-		}
-		/*Tour and site pictures*/
-		.showcase {
-			position: relative;
-			display: none;
-		}
-		.expand_container {
-			position: absolute;
-			width: 30px;
-			height: 30px;
-			float: right;
-			right: 10px;
-			top: 10px;
-			background-color: rgb(29, 29, 29);
-			text-align: center;
-			line-height: 30px;
-			z-index: 2;
-		}
-		#tour_container {
-			-webkit-user-select: none;  /* Chrome all / Safari all */
-  			-moz-user-select: none;     /* Firefox all */
-  			-ms-user-select: none;      /* IE 10+ */
-			width: 850px;
-			height: 505px;
-			float: left;
-			position: relative;
-			overflow: hidden;
-			background-color: rgb(238, 202, 202);
-			margin-top: 80px;
-			margin-left: 10px;
-		}
-		#prev, #next {
-			top: -275px;
-			z-index: 2;
-		}
-		#prev {
-			float: left;
-			left: 2.34375%;
-		}
-		#next {
-			float: right;
-			right: 2.34375%;
-		}
-		/* Map */
-		.map {
-			display: none;
-			position: relative;
-			margin-left: 10px;
-			top: -20px;
-		}
-		#map_container {
-			position: relative;
-			width: 350px;
-			height: 200px;
-			background-color: rgb(29, 29, 29);
-			float: right;
-			top: -220px;
-			z-index: 2;
-		}
-		#visibility_container {
-			position: relative;
-			width: 60px;
-			height: 30px;
-			background-color: rgb(29, 29, 29);
-			top: -30px;
-			text-align: center;
-		}	
-		/*Bottom tour navigation*/
-		.preview {
-			display: inline-block;
-			position: relative;
-			margin-top: 13px;
-			margin-left: 20px;
-			opacity: 0.5;
-		}
-		.site_num{
-			-webkit-user-select: none;  /* Chrome all / Safari all */
-  			-moz-user-select: none;     /* Firefox all */
-  			-ms-user-select: none;      /* IE 10+ */
-			width: 30px;
-			height: 30px;
-			position: relative;
-			float: left;
-			background-color: rgb(138, 8, 8);
-			margin-right:-30px;
-			font-weight: bold;
-			font-size: 24px;
-			text-align: center;
-			color: white;
-			line-height: 30px;
-		}
-		#navi {
-			width: 1065px;
-			height: 185px;
-			float: left;
-			overflow-x: auto;
-			overflow-y: hidden;
-			white-space: nowrap;
-			background-color: rgb(221, 221, 221);
-			margin-top: 10px;
-			margin-left: 105px;
-		}
-		#last {
-			margin-right: 20px;
-		}
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
   </head>
   <body scroll="no">
     <!-- Classrooms -->
@@ -296,28 +39,18 @@
         <p class ="classroom_blurbs">With his Masters in Computer Science and a Bachelors in Math, Mr. Stubblefield has been teaching AP Computer Science Principles at Troy for 2 years, but he is best known as Commander because he was the Senior Naval Science Instructor of the NJROTC program before switching to becoming a Computer Science teacher. As of right now, he teaches AP Computer Science Principles, and he welcomes incoming freshmen and expects them to be confident in their abilities. He is also the advisor of Troy’s Cyber Defense Team.</p>
       </div>	
     </div>
-    <div id="expandedMap_container" class="popup">
-      <img class="expandedMaps" src="images/maps/quad.jpg"/>
-      <img class="expandedMaps" src="images/maps/200.jpg"/>
-      <img class="expandedMaps" src="images/maps/300.jpg"/>
-      <img class="expandedMaps" src="images/maps/400.jpg"/>
-      <img class="expandedMaps" src="images/maps/500.jpg"/>
-      <img class="expandedMaps" src="images/maps/900.jpg"/>
-      <img class="expandedMaps" src="images/maps/1000.jpg"/>
-    </div>
+	<!-- Expand sites -->
     <div id="expandedSite_container" class="popup">
-      <img class="expandedSites" src="images/sites/site_1.jpg"/>
-      <img class="expandedSites" src="images/sites/site_2.jpg"/>
-      <img class="expandedSites" src="images/sites/site_3.jpg"/>
-      <img class="expandedSites" src="images/sites/site_4.jpg"/>
-      <img class="expandedSites" src="images/sites/site_5.jpg"/>
-      <img class="expandedSites" src="images/sites/site_6.jpg"/>
-      <img class="expandedSites" src="images/sites/site_7.jpg"/>
+      <img class="expandedSites" src="images/sites/site_1.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_2.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_3.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_4.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_5.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_6.jpg" width="1280" height="720"/>
+      <img class="expandedSites" src="images/sites/site_7.jpg" width="1280" height="720"/>
 	</div>
     <!-- Lightbox -->
-    <div id="lightbox">
-      <p id="close" class="bt" onclick="toggleLightbox();disappear();">X</p>
-    </div>
+    <div id="lightbox" onclick="toggleLightbox();disappear();"></div>
     <!-- Header -->
     <div id="header">
       <p>Troy High School Virtual Tour</p>
@@ -375,13 +108,11 @@
 	    <img class="showcase" src="images/sites/site_7.jpg" width="898" height="505"/>
 	    <p id="prev" class="bt" onclick="plusSlides(-1)">&#10094;</p>
 	    <p id="next" class="bt" onclick="plusSlides(1)">&#10095;</p>
-	    <div id="map_container">
-	      <div class="expand_container">
-	        <p class="bt" onclick="toggleMapExpand();toggleLightbox();">+</p>
-	      </div>         
+	    <div id="map_container">   
      	  <div id="visibility_container">
       	    <p class="bt" onclick="toggleVis()">-</p>
 		  </div>
+		  <!-- Maps -->
           <img class="map" src="images/maps/quad.jpg" width="330" height="180"/>
           <img class="map" src="images/maps/200.jpg" width="330" height="180"/>
           <img class="map" src="images/maps/300.jpg" width="330" height="180"/>
@@ -424,132 +155,6 @@
       </div>
 	</div>
     <!-- Tour mechanism -->
-    <script>
-		var NUMSLIDES = 7;
-		var NUMINFO = 7;
-		var slideIndex = 1;
-		var mapVisible = false;
-		var lightboxVisible = false;
-		showSlides(slideIndex);
-		/**
-		 * Goes forward or backward one slide.
-		 * 
-		 * @param n  + or - 1 indicating forward or backward motion.
-		 */
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-		/**
-		 * Switches slide according to specified slide number.
-		 * 
-		 * @param n  slide number
-		 */
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-		/**
-		 * Toggles visibility of slides according to current
-		 * slide number.
-		 * 
-		 * @param n  slide index
-		 */
-		function showSlides(n) {
-			var i;
-			var j;
-			var slides = document.getElementsByClassName("showcase");
-			var previews = document.getElementsByClassName("preview");
-			var blurbs = document.getElementsByClassName("blurbs");
-			var titles = document.getElementsByClassName("site_titles");
-			var info = document.getElementsByClassName("info_container");
-			var maps = document.getElementsByClassName("map");
-			if (n > slides.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = slides.length}
-			for(j = 0; j < NUMINFO; j++){
-				info[j].style.display = "none";
-			}
-			if (slideIndex === 2) {
-				info[0].style.display = "block";
-			}
-			if (slideIndex === 3) {
-				info[1].style.display = "block";
-				info[2].style.display = "block";
-			}
-			if (slideIndex === 5) {
-				info[3].style.display = "block";
-			}
-			if (slideIndex === 6) {
-				info[4].style.display = "block";
-				info[5].style.display = "block";
-			}
-			if (slideIndex === 7) {
-				info[6].style.display = "block";
-			}
-			for(i = 0; i < NUMSLIDES; i++) {
-				slides[i].style.display = "none";
-				maps[i].style.display = "none";
-				blurbs[i].style.display = "none";
-				titles[i].style.display = "none";
-				previews[i].style.opacity = "0.5";
-			}
-			slides[slideIndex-1].style.display = "block";
-			maps[slideIndex-1].style.display = "block";
-			titles[slideIndex-1].style.display = "block";
-			blurbs[slideIndex-1].style.display = "block";
-			previews[slideIndex-1].style.opacity = "1.0";
-		}
-		function toggleVis() {
-			var maps = document.getElementsByClassName("map");
-			if(mapVisible) {
-				document.getElementById("map_container").style.height = "200px";
-				document.getElementById("map_container").style.top = "-220px";
-				showSlides(slideIndex);
-				document.getElementById("visibility_container").style.backgroundColor = "rgba(29, 29, 29, 1)";
-			}
-			else {
-				document.getElementById("map_container").style.height = "0px";
-				document.getElementById("map_container").style.top = "-10px";
-				for(i = 0; i < NUMSLIDES; i++) {maps[i].style.display = "none";}
-				document.getElementById("visibility_container").style.backgroundColor = "rgba(29, 29, 29, 0.5)";
-			}
-			mapVisible = !mapVisible;
-		}
-		function toggleLightbox() {
-			if(lightboxVisible) {
-				document.getElementById("lightbox").style.display = "none";
-			}
-			else {
-				document.getElementById("lightbox").style.display = "block";
-			}
-			lightboxVisible = !lightboxVisible;
-		}
-		function toggleSiteExpand() {
-			document.getElementById("expandedSite_container").style.display = "block";
-			var sites = document.getElementsByClassName("expandedSites");
-			for(i = 0; i < NUMSLIDES; i++) {sites[i].style.display = "none";}
-			sites[slideIndex-1].style.display = "block";
-		}
-		function toggleMapExpand() {
-			document.getElementById("expandedMap_container").style.display = "block";
-			var maps = document.getElementsByClassName("expandedMaps");
-			for(i = 0; i < NUMSLIDES; i++) {maps[i].style.display = "none";}
-			maps[slideIndex-1].style.display = "block";
-		}
-		function showClassroom(n) {
-			document.getElementById("classroom_container").style.display = "block";
-			var classrooms = document.getElementsByClassName("classrooms");
-			var cblurbs = document.getElementsByClassName("cblurbs_container");
-			for(i = 0; i < NUMINFO; i++) {
-				classrooms[i].style.display = "none";
-				cblurbs[i].style.display = "none";
-			}
-			classrooms[n].style.display = "block";
-			cblurbs[n].style.display = "block";
-		}
-		function disappear() {
-			document.getElementById("classroom_container").style.display = "none";
-			document.getElementById("expandedMap_container").style.display = "none";
-			document.getElementById("expandedSite_container").style.display = "none";
-		}
-	</script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

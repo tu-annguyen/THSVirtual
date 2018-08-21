@@ -1,0 +1,254 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+div {
+	margin: 0;
+}
+h1 {
+	color: white;
+}
+p {
+	color: white;
+	margin: 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+	#header {
+		width: 100%;
+		height: 5.55556%;
+		background-color: rgb(138, 8, 8);
+	}
+	#wrapper {
+		width: 100%;
+	}
+}
+.bt {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	position: relative;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 24px;
+	color: white;
+}
+/* Everything on top */
+.popup {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 4;
+}
+.classrooms {
+	display: none;
+	position: relative;
+	width: 80%;
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 4%;
+}
+.expandedSites {
+	display: none;
+	position: relative;
+	width: 80%;
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 4%;
+	z-index: 4;
+}
+.cblurbs_container {
+	display: none;
+	width: 80%;
+	max-width: 1280px;
+	background-color: rgb(29, 29, 29);
+	margin: auto;
+}
+.classroom_blurbs {
+	width: 97%;
+	max-width: 1220px;
+	margin: auto;
+	padding: 10px;
+}
+/* Lightbox */
+#lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+}
+#close {
+	float: right;
+	top: 50px;
+	right: 50px;
+	z-index: 4;
+}
+/* Header */
+#header {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(138, 8, 8);
+	float: left;
+}
+#header p {
+	position: relative;
+	font-size: 30px;
+	top: 10px;
+	left: 20px;
+}
+/* Everything else */
+#wrapper {
+	width: 1280px;
+	height: 800px;
+	margin: auto;
+}
+/*Blurb box*/
+.site_titles {
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.blurbs {
+	position: relative;
+	width: 165px;
+	left: 20px;
+	display: none;
+}
+.info_container {
+	width: 175px;
+	height: 50px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: rgb(138, 8, 8);
+	display: none;
+}
+.info {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 50px;
+}
+#blurb_container {
+	width: 205px;
+	height: 505px;
+	float: left;
+	position: relative;
+	background-color: rgb(29, 29, 29);
+	margin-top: 80px;
+	margin-left: 105px; 
+}
+/*Tour and site pictures*/
+.showcase {
+	position: relative;
+	display: none;
+}
+.expand_container {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	float: right;
+	right: 10px;
+	top: 10px;
+	background-color: rgb(29, 29, 29);
+	text-align: center;
+	line-height: 30px;
+	z-index: 2;
+}
+#tour_container {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	width: 850px;
+	height: 505px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background-color: rgb(238, 202, 202);
+	margin-top: 80px;
+	margin-left: 10px;
+}
+#prev, #next {
+	top: -275px;
+	z-index: 2;
+}
+#prev {
+	float: left;
+	left: 2.34375%;
+}
+#next {
+	float: right;
+	right: 2.34375%;
+}
+#mini {
+	z-index: 5;
+}
+/* Map */
+.map {
+	display: none;
+	position: relative;
+	margin-left: 10px;
+	top: -20px;
+}
+#map_container {
+	position: relative;
+	width: 350px;
+	height: 200px;
+	background-color: rgb(29, 29, 29);
+	float: right;
+	top: -220px;
+	z-index: 2;
+}
+#visibility_container {
+	position: relative;
+	width: 60px;
+	height: 30px;
+	background-color: rgb(29, 29, 29);
+	top: -30px;
+	text-align: center;
+}	
+/*Bottom tour navigation*/
+.preview {
+	display: inline-block;
+	position: relative;
+	margin-top: 13px;
+	margin-left: 20px;
+	opacity: 0.5;
+}
+.site_num{
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	width: 30px;
+	height: 30px;
+	position: relative;
+	float: left;
+	background-color: rgb(138, 8, 8);
+	margin-right:-30px;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+#navi {
+	width: 1065px;
+	height: 185px;
+	float: left;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	background-color: rgb(221, 221, 221);
+	margin-top: 10px;
+	margin-left: 105px;
+}
+#last {
+	margin-right: 20px;
+}
