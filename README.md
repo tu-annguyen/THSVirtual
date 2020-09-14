@@ -1,3 +1,2 @@
-# tunacore.github.io
-ths virtual tour
+# Troy High School Virtual Tour
 https://tu-annguyen.github.io/THSVirtual/
