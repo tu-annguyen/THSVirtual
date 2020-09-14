@@ -98,6 +98,10 @@ p {
 	flex-direction: column;
 	align-items: center;
 }
+#top_container {
+	display: flex;
+	flex-direction: column;
+}
 /*Blurb box*/
 .site_titles {
 	width: 100%;
@@ -106,9 +110,10 @@ p {
 }
 .blurbs {
 	position: relative;
-	width: 165px;
+	width: 95%;
 	left: 20px;
 	display: none;
+	word-wrap: normal;
 }
 .info_container {
 	width: 175px;
@@ -126,8 +131,10 @@ p {
 	line-height: 50px;
 }
 #blurb_container {
-	width: 205px;
-	height: 505px;
+	width: 84vw;
+	height: 17vw;
+	max-width: 1028px;
+	max-height: 505px;
 	float: left;
 	position: relative;
 	background-color: rgb(29, 29, 29);
@@ -153,8 +160,10 @@ p {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
-	max-width: 850px;
-	max-height: 505px;
+	width: 84vw;
+	height: 57vw;
+	max-width: 1028px;
+	max-height: 611px;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -224,8 +233,9 @@ p {
 	line-height: 30px;
 }
 #navi {
-	width: 1065px;
-	height: 185px;
+	width: 84vw;
+	max-width: 1065px;
+	max-height: 185px;
 	float: left;
 	overflow-x: auto;
 	overflow-y: hidden;

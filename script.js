@@ -70,6 +70,7 @@ function showSlides(n) {
 	blurbs[slideIndex-1].style.display = "block";
 	previews[slideIndex-1].style.opacity = "1.0";
 }
+
 function toggleVis() {
 	var maps = document.getElementsByClassName("map");
 	if(mapVisible) {
@@ -86,6 +87,7 @@ function toggleVis() {
 	}
 	mapVisible = !mapVisible;
 }
+
 function toggleLightbox() {
 	if(lightboxVisible) {
 		document.getElementById("lightbox").style.display = "none";
@@ -95,12 +97,14 @@ function toggleLightbox() {
 	}
 	lightboxVisible = !lightboxVisible;
 }
+
 function toggleSiteExpand() {
 	document.getElementById("expandedSite_container").style.display = "block";
 	var sites = document.getElementsByClassName("expandedSites");
 	for(i = 0; i < NUMSLIDES; i++) {sites[i].style.display = "none";}
 	sites[slideIndex-1].style.display = "block";
 }
+
 function showClassroom(n) {
 	document.getElementById("classroom_container").style.display = "block";
 	var classrooms = document.getElementsByClassName("classrooms");
@@ -112,7 +116,20 @@ function showClassroom(n) {
 	classrooms[n].style.display = "block";
 	cblurbs[n].style.display = "block";
 }
+
 function disappear() {
 	document.getElementById("classroom_container").style.display = "none";
 	document.getElementById("expandedSite_container").style.display = "none";
+}
+
+// Maintain showcase images' ratio
+var imgs = document.getElementsByClassName('showcase')
+for(var i = 0; i < imgs.length; i++) {
+	img = imgs.item(i);
+	img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+		}
+	}
 }
