@@ -28,7 +28,7 @@
       </div>
       <img class="classrooms" src="images/classrooms/ngo.jpg"/>
       <div class ="cblurbs_container">
-        <p class ="classroom_blurbs">Before coming to Troy, Mrs. Ngo taught for five years at Brea High School. Ever since, she has been teaching Biology Honors for the past 10 years. Mrs. Ngo strives to develop her student’s problem solving abilities and hopes to have them take in good study habits and attitudes. Mrs. Ngo is one of the most loved teachers at Troy for her sense of humor and engaging class.</p>
+        <p class ="classroom_blurbs">Before coming to Troy, Mrs. Ngo taught for five years at Brea High School. Ever since, she has been teaching Biology Honors for the past 10 years. Mrs. Ngo strives to develop her student's problem solving abilities and hopes to have them take in good study habits and attitudes. Mrs. Ngo is one of the most loved teachers at Troy for her sense of humor and engaging class.</p>
       </div>
       <img class="classrooms" src="images/classrooms/gower.jpg"/>
       <div class ="cblurbs_container">
@@ -36,10 +36,11 @@
       </div>
       <img class="classrooms" src="images/classrooms/stubblefield.jpg"/>
       <div class ="cblurbs_container">
-        <p class ="classroom_blurbs">With his Masters in Computer Science and a Bachelors in Math, Mr. Stubblefield has been teaching AP Computer Science Principles at Troy for 2 years, but he is best known as Commander because he was the Senior Naval Science Instructor of the NJROTC program before switching to becoming a Computer Science teacher. As of right now, he teaches AP Computer Science Principles, and he welcomes incoming freshmen and expects them to be confident in their abilities. He is also the advisor of Troy’s Cyber Defense Team.</p>
+        <p class ="classroom_blurbs">With his Masters in Computer Science and a Bachelors in Math, Mr. Stubblefield has been teaching AP Computer Science Principles at Troy for 2 years, but he is best known as Commander because he was the Senior Naval Science Instructor of the NJROTC program before switching to becoming a Computer Science teacher. As of right now, he teaches AP Computer Science Principles, and he welcomes incoming freshmen and expects them to be confident in their abilities. He is also the advisor of Troy's Cyber Defense Team.</p>
       </div>	
     </div>
-	<!-- Expand sites -->
+
+	  <!-- Expand sites -->
     <div id="expandedSite_container" class="popup">
       <img class="expandedSites" src="images/sites/site_1.jpg" width="1280" height="720"/>
       <img class="expandedSites" src="images/sites/site_2.jpg" width="1280" height="720"/>
@@ -48,112 +49,128 @@
       <img class="expandedSites" src="images/sites/site_5.jpg" width="1280" height="720"/>
       <img class="expandedSites" src="images/sites/site_6.jpg" width="1280" height="720"/>
       <img class="expandedSites" src="images/sites/site_7.jpg" width="1280" height="720"/>
-	</div>
+    </div>
+  
     <!-- Lightbox -->
     <div id="lightbox" onclick="toggleLightbox();disappear();"></div>
+
     <!-- Header -->
     <div id="header">
       <p>Troy High School Virtual Tour</p>
     </div>
+
     <div id="wrapper">
-      <!-- Blurb box -->
-      <div id="blurb_container">
-        <h1 class="site_titles">Quad</h1>
-        <h1 class="site_titles">200 Building</h1>
-        <h1 class="site_titles">300 Building</h1>
-        <h1 class="site_titles">400 Building</h1>
-        <h1 class="site_titles">500 Building</h1>
-        <h1 class="site_titles">900 Building</h1>
-        <h1 class="site_titles">1000 Building</h1>
-        <p class="blurbs">The Quad is a central area for students to make their way to their classes every day. Additionally, many school events and club fundraisers are held here because it is spacious and easily accessible.</p>
-        <p class="blurbs">The 200 Building is mostly known for its Library. Here, students can study in silence and borrow from a wide array of books. The library also has many computers as well as a few printers for students to use. However,  the 200 Building also includes the Lecture hall and one English classroom.</p>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(0);toggleLightbox();">View Mrs. Hufferd's Classroom</p>
-		</div>
-        <p class="blurbs">The 300 Building mainly contains Math, English, and World Language classrooms. This is the largest building on Troy’s campus with 3 long parallel hallways intersected with another perpendicular hallway leading to the back of the school.</p>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(1);toggleLightbox();">View Mr. Rogers's Classroom</p>
-		</div>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(2);toggleLightbox();">View Mrs. Romero's Classroom</p>
-		</div>
-        <p class="blurbs">The 400 Building is the main hub for elective and tech courses offered at Troy. Here, students are often seen participating in programs such as ROTC, Band, Choir, and Art. Additionally, AP Computer Science Principles, AP Computer Science A, and Computer Science IBSL are taught here.</p>
-        <p class="blurbs">The 500 Building is the history building at Troy. In this building, students take classes such as World History, European History, American History. There is a variety of furniture placed in the extremely spacious hallways for students to relax in before classes. Also, many student works of art are hung up on the walls of the hallways for students to enjoy.</p>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(3);toggleLightbox();">View Mr. Shirota's Classroom</p>
-		</div>
-        <p class="blurbs">The 900 Building is all about science. In this building, students can learn subjects such as Biology, Chemistry, Physics, Anatomy, and more. This building is usually accessed through the breezeway, which is located between the 400 and 500 buildings. This is also where Troy’s renowned Science Olympiad team practices after school.</p>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(4);toggleLightbox();">View Mrs. Ngo's Classroom</p>
-		</div>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(5);toggleLightbox();">View Mr. Gower's Classroom</p>
-		</div>
-        <p class="blurbs">The 1000 Buildings are usually viewed as extra classrooms used by Cyber Security and Business classes. One of the buildings has two powerful computer labs, which is where Troy’s Cyber Security team practices.</p>
-        <div class="info_container">
-          <p class="info bt" onClick="showClassroom(6);toggleLightbox();">View Mr. Stubblefield's Classroom</p>
-		</div>
-      </div>
-      <!-- Tour and site pictures -->
-      <div id="tour_container">
-        <div class="expand_container">
-	      <p class="bt" onclick="toggleSiteExpand();toggleLightbox();">+</p>
-	    </div>         
-	    <img class="showcase" src="images/sites/site_1.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_2.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_3.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_4.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_5.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_6.jpg" width="898" height="505"/>
-	    <img class="showcase" src="images/sites/site_7.jpg" width="898" height="505"/>
-	    <p id="prev" class="bt" onclick="plusSlides(-1)">&#10094;</p>
-	    <p id="next" class="bt" onclick="plusSlides(1)">&#10095;</p>
-	    <div id="map_container">   
-     	  <div id="visibility_container">
-      	    <p class="bt" onclick="toggleVis()">-</p>
-		  </div>
-		  <!-- Maps -->
-          <img class="map" src="images/maps/quad.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/200.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/300.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/400.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/500.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/900.jpg" width="330" height="180"/>
-          <img class="map" src="images/maps/1000.jpg" width="330" height="180"/>
+      <div id="top_container">
+        <!-- Blurb box -->
+        <div id="blurb_container">
+          <h1 class="site_titles">Quad</h1>
+          <h1 class="site_titles">200 Building</h1>
+          <h1 class="site_titles">300 Building</h1>
+          <h1 class="site_titles">400 Building</h1>
+          <h1 class="site_titles">500 Building</h1>
+          <h1 class="site_titles">900 Building</h1>
+          <h1 class="site_titles">1000 Building</h1>
+          <p class="blurbs">The Quad is a central area for students to make their way to their classes every day. Additionally, many school events and club fundraisers are held here because it is spacious and easily accessible.</p>
+          <p class="blurbs">The 200 Building is mostly known for its Library. Here, students can study in silence and borrow from a wide array of books. The library also has many computers as well as a few printers for students to use. However,  the 200 Building also includes the Lecture hall and one English classroom.</p>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(0);toggleLightbox();">View Mrs. Hufferd's Classroom</p>
+          </div>
+          <p class="blurbs">The 300 Building mainly contains Math, English, and World Language classrooms. This is the largest building on Troy's campus with 3 long parallel hallways intersected with another perpendicular hallway leading to the back of the school.</p>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(1);toggleLightbox();">View Mr. Rogers's Classroom</p>
+          </div>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(2);toggleLightbox();">View Mrs. Romero's Classroom</p>
+          </div>
+          <p class="blurbs">The 400 Building is the main hub for elective and tech courses offered at Troy. Here, students are often seen participating in programs such as ROTC, Band, Choir, and Art. Additionally, AP Computer Science Principles, AP Computer Science A, and Computer Science IBSL are taught here.</p>
+          <p class="blurbs">The 500 Building is the history building at Troy. In this building, students take classes such as World History, European History, American History. There is a variety of furniture placed in the extremely spacious hallways for students to relax in before classes. Also, many student works of art are hung up on the walls of the hallways for students to enjoy.</p>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(3);toggleLightbox();">View Mr. Shirota's Classroom</p>
+          </div>
+          <p class="blurbs">The 900 Building is all about science. In this building, students can learn subjects such as Biology, Chemistry, Physics, Anatomy, and more. This building is usually accessed through the breezeway, which is located between the 400 and 500 buildings. This is also where Troy's renowned Science Olympiad team practices after school.</p>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(4);toggleLightbox();">View Mrs. Ngo's Classroom</p>
+          </div>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(5);toggleLightbox();">View Mr. Gower's Classroom</p>
+          </div>
+          <p class="blurbs">The 1000 Buildings are usually viewed as extra classrooms used by Cyber Security and Business classes. One of the buildings has two powerful computer labs, which is where Troy's Cyber Security team practices.</p>
+          <div class="info_container">
+            <p class="info bt" onClick="showClassroom(6);toggleLightbox();">View Mr. Stubblefield's Classroom</p>
+          </div>
+        </div>
+      
+
+        <!-- Tour and site pictures -->
+        <div id="tour_container">
+          <div class="expand_container">
+            <p class="bt" onclick="toggleSiteExpand();toggleLightbox();">+</p>
+          </div>  
+        
+          <div>
+            <img class="showcase" src="images/sites/site_1.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_2.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_3.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_4.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_5.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_6.jpg" width="898" height="505"/>
+            <img class="showcase" src="images/sites/site_7.jpg" width="898" height="505"/>
+            <p id="prev" class="bt" onclick="plusSlides(-1)">&#10094;</p>
+            <p id="next" class="bt" onclick="plusSlides(1)">&#10095;</p>
+          </div>
+        
+          <div id="map_container">   
+            <div id="visibility_container">
+                <p class="bt" onclick="toggleVis()">-</p>
+            </div>
+        
+            <!-- Maps -->
+            <img class="map" src="images/maps/quad.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/200.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/300.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/400.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/500.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/900.jpg" width="330" height="180"/>
+            <img class="map" src="images/maps/1000.jpg" width="330" height="180"/>
+          </div>
         </div>
       </div>
+
       <!-- Bottom tour navigation -->
-      <div id="navi">
-        <div class="preview">
-          <div class="site_num">1</div>
-          <img src="images/sites/site_1.jpg" width="256" height="144" onclick="currentSlide(1)"/>
-	    </div>
-        <div class="preview">
-          <div class="site_num">2</div>
-          <img src="images/sites/site_2.jpg" width="256" height="144" onclick="currentSlide(2)"/>
-	    </div>
-	    <div class="preview">
-          <div class="site_num">3</div>
-          <img src="images/sites/site_3.jpg" width="256" height="144" onclick="currentSlide(3)"/>
-	    </div>
-	    <div class="preview">
-          <div class="site_num">4</div>
-          <img src="images/sites/site_4.jpg" width="256" height="144" onclick="currentSlide(4)"/>
-	    </div>
-	    <div class="preview">
-          <div class="site_num">5</div>
-          <img src="images/sites/site_5.jpg" width="256" height="144" onclick="currentSlide(5)"/>
-	    </div>
-	    <div class="preview">
-          <div class="site_num">6</div>
-          <img src="images/sites/site_6.jpg" width="256" height="144" onclick="currentSlide(6)"/>
-	    </div>
-	    <div class="preview" id="last">
-          <div class="site_num">7</div>
-          <img src="images/sites/site_7.jpg" width="256" height="144" onclick="currentSlide(7)"/>
-	    </div>
+      <div id="bottom_container">
+        <div id="navi">
+          <div class="preview">
+            <div class="site_num">1</div>
+            <img src="images/sites/site_1.jpg" width="256" height="144" onclick="currentSlide(1)"/>
+          </div>
+          <div class="preview">
+            <div class="site_num">2</div>
+            <img src="images/sites/site_2.jpg" width="256" height="144" onclick="currentSlide(2)"/>
+          </div>
+          <div class="preview">
+              <div class="site_num">3</div>
+              <img src="images/sites/site_3.jpg" width="256" height="144" onclick="currentSlide(3)"/>
+          </div>
+          <div class="preview">
+              <div class="site_num">4</div>
+              <img src="images/sites/site_4.jpg" width="256" height="144" onclick="currentSlide(4)"/>
+          </div>
+          <div class="preview">
+              <div class="site_num">5</div>
+              <img src="images/sites/site_5.jpg" width="256" height="144" onclick="currentSlide(5)"/>
+          </div>
+          <div class="preview">
+              <div class="site_num">6</div>
+              <img src="images/sites/site_6.jpg" width="256" height="144" onclick="currentSlide(6)"/>
+          </div>
+          <div class="preview" id="last">
+              <div class="site_num">7</div>
+              <img src="images/sites/site_7.jpg" width="256" height="144" onclick="currentSlide(7)"/>
+          </div>
+        </div>
       </div>
-	</div>
+    </div>
+	
     <!-- Tour mechanism -->
     <script type="text/javascript" src="script.js"></script>
   </body>

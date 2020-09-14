@@ -104,10 +104,16 @@ p {
 	left: 20px;
 }
 /* Everything else */
-#wrapper {
+/* #wrapper {
 	width: 1280px;
 	height: 800px;
 	margin: auto;
+} */
+#top_container {
+	display: flex;
+}
+#bottom_container {
+	display: flex;
 }
 /*Blurb box*/
 .site_titles {
