@@ -148,6 +148,11 @@ p {
 	position: relative;
 	display: none;
 }
+@media (max-width: 1280px) {
+	.expand_container {
+		display: none;
+	}
+}
 .expand_container {
 	position: absolute;
 	width: 30px;
