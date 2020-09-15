@@ -165,9 +165,9 @@ p {
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	width: 84vw;
-	height: 57vw;
+	height: 47.25vw;
 	max-width: 1028px;
-	max-height: 611px;
+	max-height: 578px;
 	float: left;
 	position: relative;
 	overflow: hidden;
