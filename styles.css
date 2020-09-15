@@ -192,16 +192,18 @@ p {
 .map {
 	display: none;
 	position: relative;
-	margin-left: 10px;
+	margin: auto;
 	top: -20px;
 }
 #map_container {
 	position: relative;
-	width: 350px;
-	height: 200px;
+	width: 34.047%;
+	height: 34.6%;
+	min-width: 250px;
+	min-height: 142.86px;
 	background-color: rgb(29, 29, 29);
 	float: right;
-	top: -220px;
+	top: -38.06%;
 	z-index: 2;
 }
 #visibility_container {

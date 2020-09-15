@@ -74,14 +74,15 @@ function showSlides(n) {
 function toggleVis() {
 	var maps = document.getElementsByClassName("map");
 	if(mapVisible) {
-		document.getElementById("map_container").style.height = "200px";
-		document.getElementById("map_container").style.top = "-220px";
+		document.getElementById("map_container").style.backgroundColor = "rgba(29, 29, 29, 1)";
+		document.getElementById("map_container").style.height = "34.6%";
+		document.getElementById("map_container").style.top = "-38.06%";
 		showSlides(slideIndex);
 		document.getElementById("visibility_container").style.backgroundColor = "rgba(29, 29, 29, 1)";
 	}
 	else {
-		document.getElementById("map_container").style.height = "0px";
-		document.getElementById("map_container").style.top = "-10px";
+		document.getElementById("map_container").style.backgroundColor = "rgba(0, 0, 0, 0)";
+		document.getElementById("map_container").style.top = "-01.73%";
 		for(i = 0; i < NUMSLIDES; i++) {maps[i].style.display = "none";}
 		document.getElementById("visibility_container").style.backgroundColor = "rgba(29, 29, 29, 0.5)";
 	}
