@@ -243,8 +243,8 @@ p {
 .preview {
 	display: inline-block;
 	position: relative;
-	margin-top: 13px;
-	margin-left: 20px;
+	margin-top: 7px;
+	margin-left: 15px;
 	opacity: 0.5;
 }
 .site_num{
