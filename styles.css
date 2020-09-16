@@ -161,6 +161,9 @@ p {
 	position: relative;
 	display: none;
 }
+#showcase_container {
+	height: 100%;
+}
 @media (max-width: 1280px) {
 	.expand_container {
 		display: none;
@@ -191,9 +194,10 @@ p {
 	overflow: hidden;
 	background-color: rgb(238, 202, 202);
 }
-#prev, #next {
-	top: -275px;
+#slide_nav {
+	top: -47%;
 	z-index: 2;
+	position: relative;
 }
 #prev {
 	float: left;
