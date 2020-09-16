@@ -122,7 +122,7 @@ function disappear() {
 	document.getElementById("classroom_container").style.display = "none";
 	document.getElementById("expandedSite_container").style.display = "none";
 }
-
+<! --
 // Maintain showcase images' ratio
 var imgs = document.getElementsByClassName('showcase')
 for(var i = 0; i < imgs.length; i++) {
@@ -134,3 +134,4 @@ for(var i = 0; i < imgs.length; i++) {
 		}
 	}
 }
+-->
