@@ -122,16 +122,16 @@ function disappear() {
 	document.getElementById("classroom_container").style.display = "none";
 	document.getElementById("expandedSite_container").style.display = "none";
 }
-<! --
+
 // Maintain showcase images' ratio
-var imgs = document.getElementsByClassName('showcase')
-for(var i = 0; i < imgs.length; i++) {
-	img = imgs.item(i);
-	img.onload = function() {
-    if(img.height > img.width) {
-        img.height = '100%';
-        img.width = 'auto';
-		}
-	}
-}
--->
+// var imgs = document.getElementsByClassName('showcase')
+// for(var i = 0; i < imgs.length; i++) {
+//	img = imgs.item(i);
+//	img.onload = function() {
+//    if(img.height > img.width) {
+//        img.height = '100%';
+//        img.width = 'auto';
+//		}
+//	}
+// }
+
