@@ -194,8 +194,13 @@ p {
 	overflow: hidden;
 	background-color: rgb(238, 202, 202);
 }
+@media screen and (max-width: 500px) {
+	#slide_nav {
+		top: -60% !important;
+	}
+}
 #slide_nav {
-	top: -47%;
+	top: -50%;
 	z-index: 2;
 	position: relative;
 }
@@ -215,7 +220,7 @@ p {
 	display: none;
 	position: relative;
 	margin: auto;
-	top: -20px;
+	top: -10%;
 }
 #map_container {
 	position: relative;
@@ -228,10 +233,10 @@ p {
 }
 #visibility_container {
 	position: relative;
-	width: 60px;
-	height: 30px;
+	width: 25%;
+	height: 15%;
 	background-color: rgb(29, 29, 29);
-	top: -30px;
+	top: -15%;
 	text-align: center;
 }	
 /*Bottom tour navigation*/
