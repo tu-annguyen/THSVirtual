@@ -120,6 +120,19 @@ p {
 	display: flex;
 	justify-content: center;
 }
+@media screen and (max-width: 450px) {
+	.info_wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.info_wrapper .info_container {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	.info_container + .info_container {
+		margin-top: -10px;
+	}
+}
 .info_container {
 	width: 175px;
 	height: 50px;
